@@ -14,9 +14,11 @@ function App() {
   return (
     <ChakraProvider>
       <Router>
+        
         <header>
-          <img src={logo}/>
+          
         </header>
+      
         <Routes>
           <Route path='/' element={< Home />}></Route>
           <Route path='/register' element={< Register />}></Route>

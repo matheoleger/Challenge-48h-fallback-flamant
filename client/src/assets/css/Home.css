@@ -1,4 +1,100 @@
-h1 {
-    font-size: 32px !important;
-    color: red;
+
+body {
+    background: rgb(0, 0, 0)!important;
 }
+
+.item {
+    position: relative;
+    margin-top: 2.5em;
+    margin-left: 2em;
+ 
+    width: 90em;
+    height: 42em;
+    background: #000000;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px 2em;
+
+}
+
+
+#box1 {
+    float: center;
+
+    margin: 2em;
+    width: 15em;
+    height: 15em;
+    background: #ffffff;
+    border-radius:2em;
+}
+
+#box2 {
+    float: center;
+    width: 15em;
+    height: 15em;
+    margin: 2em;
+    background: #ffffff;
+    border-radius:2em;
+}
+
+#box3 {
+    float: center;
+    margin: 2em;
+    width: 15em;
+    height: 15em;
+    background: #ffffff;
+    border-radius:2em;
+}
+
+#box4 {
+    float: center;
+    width: 15em;
+    height: 15em;
+    margin: 2em;
+    background: #ffffff;
+    border-radius:2em;
+}
+
+#box5 {
+    float: center;
+    margin: 2em;
+    width: 15em;
+    height: 15em;
+    background: #ffffff;
+    border-radius:2em;
+}
+
+#box6 {
+    float: center;
+    width: 15em;
+    height: 15em;
+    margin: 2em;
+    background: #ffffff;
+    border-radius:2em;
+}
+
+#box7 {
+    float: center;
+    margin: 2em;
+    width: 15em;
+    height: 15em;
+    background: #ffffff;
+    border-radius:2em;
+}
+
+#box8 {
+    float: center;
+    width: 15em;
+    height: 15em;
+    margin: 2em;
+    background: #ffffff;
+    border-radius:2em;
+}
+
+
+#box1:hover ~ .item{
+    filter: blur(0.5em);
+}
+
+/* #box1:hover ~ #box3, #box1:hover ~ #box4, #box1:hover ~ #box5, #box1:hover ~ #box6, #box1:hover ~ #box7, #box1:hover ~ #box8*/
