@@ -1,12 +1,16 @@
 import * as React from 'react'
+import image from "../assets/img/paysage.png"
 
 import "../assets/css/Home.css"
 
 export const Home = () => {
     return (
     <body>
+        
         <div className='item'>
-            <div id='box1'></div>
+            <div id='box1'>
+            <img src={image}/>
+            </div>
             <div id='box2'></div>
             <div id='box3'></div>
             <div id='box4'></div>
