@@ -39,13 +39,22 @@ export const Cart = () => {
             <nav>
                 
                 <div className ="container">
-                    <div id='box'>
-                        <div id='img'> 
-                        <img src={item1} title="Lorem ipsum"/>
-                        <img src={item2} title="Lorem ipsum"/>
-                        <img src={item3} title="Lorem ipsum"/>
-                        </div>
+                    <div id='box'> 
+                        <img src={item1}/>
+                        <a>Lorem ipsum</a>
+                        <a>45</a>
                     </div>
+                    <div id='box'>
+                        <img src={item2}/>
+                        <a>Lorem ipsum</a>
+                        <a>50</a>
+                    </div>
+                    <div id='box'>
+                        <img src={item3}/>
+                        <a>Lorem ipsum</a>
+                        <a>15</a>
+                    </div>
+                    
                 </div>
             </nav> 
             
