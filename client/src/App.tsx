@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 
-import logo from './assets/svg/logo.svg';
+
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Home } from './pages/Home'
@@ -15,7 +15,7 @@ function App() {
     <ChakraProvider>
       <Router>
         <header>
-          <img src={logo}/>
+          
         </header>
         <Routes>
           <Route path='/' element={< Home />}></Route>
