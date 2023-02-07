@@ -1,35 +1,27 @@
 import * as React from 'react'
+import { useNavigate } from 'react-router-dom';
 import "../assets/css/Login.css"
 
 export const Login = () => {
+    const navigate = useNavigate();
+
+    const navigateTo = (id ?: number) => {
+    String(id)
+      navigate('/register');
+    }
     return (
         <body>
             <div className='item'>
-                <form method="post" autoComplete="off" className="form" >
-                    <input type="textarea" placeholder='  E-mail' autoFocus/><br />
-                    <input type="textarea2" placeholder='  Password' autoFocus/><br />
+                <form action="Login">
+                    <input type="textarea" placeholder='E-mail' required autoFocus/><br />
+                    <input type="textarea" placeholder='Password' required/><br />
                     <input type="submit" value='Login'/>
                 </form>
-                <form action="Register">
-                    <input type="button" value='Register'/>
-                </form>
-                
-           
-
-              
-                
-       
-
-                 
-
-             
-                
-             
-
-
+                <input onClick={() => navigateTo()} type="submit" value='New account'/>
             </div>
             
-        </body>
-        
+            
+            
+        </body>        
     )
-}
+} 
