@@ -1,23 +1,37 @@
-/* Rectangle 47 */
+body {
+    background: rgb(0, 0, 0)!important;
+}
 
-position: absolute;
-width: 181px;
-height: 52px;
+#box1 {
+    position: absolute;
+    width: 181px;
+    height: 52px;
 
-background: #6246EA;
-border-radius: 10000px;
+    background: #6246EA;
+    border-radius: 10000px;
+}
 
+#box6 {
+    
+    position: absolute;
+    width: 50px;
+    height: 36px;
 
-/* Accueil */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
 
-position: absolute;
-width: 103px;
-height: 36px;
+    color: #b61212;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 36px;
+}
 
-color: #000000;
+#buttom {
+    position: absolute;
+    width: 181px;
+    height: 52px;
+
+    background: #c7090f;
+    border-radius: 10000px;
+}
