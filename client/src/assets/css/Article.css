@@ -81,13 +81,14 @@ body {
 
 }
 
-#cart {
+#cartAdd {
     position: relative;
     margin-top: 2em;
-
-    width: 10em;
-    height: 10em;
-    background: #410f39;
+    margin-left: 10em;
+    border-radius: 30em;
+    width: 8em;
+    height: 8em;
+    background: #6246EA;
     grid-column: 2 / 2;
     grid-row: 3/3;
 }
