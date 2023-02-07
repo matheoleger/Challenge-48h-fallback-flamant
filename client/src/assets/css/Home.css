@@ -3,82 +3,12 @@ body {
     background: rgb(0, 0, 0)!important;
     
 }
-.topnav {
-    
-    overflow: hidden;
-    background-color: #1f1f1f;
-  }
-  
-  .topnav a {
-    
-    float: left;
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #7665c7;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #6246EA;
-    color: rgb(33, 33, 33);
-  }
-  
-  .topnav .search-container {
-    float: right;
-  }
-  
-  .topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
 
-    font-size: 17px;
-    border: none;
-  }
-  
-  .topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 2em;
-    margin-right: 50vw;
-    background: #6246EA;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .topnav .search-container button:hover {
-    background: #2f2f2f;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav .search-container {
-      float: none;
-    }
 
-    .topnav a, .topnav input[type=text], .topnav .search-container button {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    .topnav input[type=text] {
-      border: 1px solid #ccc;  
-    }
-  }
-
-#item {
+#container {
     position: relative;
     margin-top: 4em;
-    margin-left: 3.5em;
+    margin-left: 3.1em;
     
     width: 89em;
     min-height: 20em;
@@ -102,6 +32,24 @@ img {
     grid-row: 1;
 }
 
+button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
 #price {
     position: relative;
     color: #000000;
@@ -138,7 +86,7 @@ img {
 
 #box {
     position: relative;
-    
+    border: 0em solid #6246EA;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2em;
@@ -146,23 +94,27 @@ img {
     height: 15em;
     background: #ffffff;
     border-radius:2em;
-    transition: height 1.5s, width 1.5s;
+    transition: height 1.5s, width 1.5s,border 0.3s;
     overflow: hidden;
 }
 
 
-#item:has(#box:hover){ 
+#box:has( ~ #box:hover){ 
 
     filter: blur(0.5em);
     z-index: 1;
 }
 
+#box:hover ~ #box{ 
+    filter: blur(0.5em);
+
+}
+
 #box:hover{
-    filter: none;
+    
     width: 30em;
     height: 30em;
-    z-index: 10;
-
+    border: 0.3em solid #6246EA;
 }
 
 #box:hover #price{
@@ -181,6 +133,3 @@ img {
     margin-top : -0.5em;
 }
 
-
-
-/* #box1:hover ~ #box3, #box1:hover ~ #box4, #box1:hover ~ #box5, #box1:hover ~ #box6, #box1:hover ~ #box7, #box1:hover ~ #box8*/
