@@ -5,23 +5,25 @@ import "../assets/css/Login.css"
 
 export const Login = () => {
     const navigate = useNavigate();
-    const [count, setCount] = useState(0);
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
     const navigateTo = (id ?: number) => {
-    String(id)
+        String(id)
       navigate('/register');
     }
-    const navigateHome = useNavigate();
-    const [countHome, setCountHome] = useState(0);
+
     const navigateToHome = (id ?: number) => {
-    String(id)
-        navigateHome('/');
+        String(id)
+        navigate('/');
     }
     return (
         <body>
             <div className='item'>
                 <form action="Login">
-                    <input onClick={() => setCount(count + 1)} type="textarea" placeholder='E-mail' required autoFocus/><br />
-                    <input onClick={() => setCount(count + 1)} type="textarea" placeholder='Password' required/><br />
+                    <input type="textarea" placeholder='E-mail' required autoFocus value={email} onChange={(e) => setEmail(e.target.value)}/><br />
+                    <input type="password" placeholder='Password' required value={password} onChange={(e) => setPassword(e.target.value)}/><br />
                     <input onClick={() => navigateToHome()} type="submit" value='Login'/>
                 </form>
                 <input onClick={() => navigateTo() } type="submit" value='New account'/>

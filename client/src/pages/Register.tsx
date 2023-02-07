@@ -14,7 +14,7 @@ export const Register = () => {
             <div className='item'>
                 <form action="Register">
                     <input type="textareaRegister" placeholder='E-mail'  required autoFocus/><br />
-                    <input type="textareaRegister" placeholder='Password' required /><br />
+                    <input type="password" placeholder='Password' required /><br />
                     <input type="textareaRegister" placeholder='Name' required /><br />
                     <input type="textareaRegister" placeholder='LastName'required /><br />
                     <input type="submit" value='Register'/>
