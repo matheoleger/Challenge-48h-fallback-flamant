@@ -28,19 +28,13 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 .topnav {
     
   overflow: hidden;
   background-color: #1f1f1f;
+  height: 3.7em;
 }
 
 .topnav a {
@@ -52,6 +46,8 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  
+  height: 100%;
 }
 
 .topnav a:hover {
@@ -65,26 +61,68 @@
 }
 
 .topnav .search-container {
-  float: right;
+  float: left;  
+  margin-left: 25em;
 }
 
 .topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-
+  padding: 0.5em;
+  margin-top: 0.6em;
+  border-radius: 2em;
   font-size: 17px;
   border: none;
+  
+}
+
+.compte {
+  margin-top: 0.5em;
+  float: left;
+  margin-left: -10em;
+  height: 2.8em;
+  width: 10em;
+  border-radius: 2em;
+  background-color: rgb(88, 88, 88);
+  
+  
+}
+
+.compte #cart{
+  float: right;
+  height: 2.6em;
+  width: 2.6em;
+  border-radius: 2em;
+  padding: 6px 10px;
+  margin-top: -2.6em;
+  margin-right: 1em;
+  background: #6246EA;
+  font-size: 17px;
+  
+}
+
+.compte #login{
+  float: right;
+  height: 2.6em;
+  width: 2.6em;
+  border-radius: 2em;
+  padding: 6px 10px;
+  margin-top: 0em;
+  margin-right: 5.8em;
+  background: #6246EA;
+  font-size: 17px;
+  
 }
 
 .topnav .search-container button {
   float: right;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 2em;
   padding: 6px 10px;
-  margin-top: 2em;
-  margin-right: 50vw;
+  margin-top: 0.6em;
+  margin-right: 45vw;
   background: #6246EA;
   font-size: 17px;
-  border: none;
-  cursor: pointer;
+  
   
 }
 
