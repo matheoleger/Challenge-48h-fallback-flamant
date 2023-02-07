@@ -2,7 +2,6 @@ import * as React from 'react'
 import image from "../assets/img/paysage2.png"
 import aggrandissement from "../assets/img/aggrandissement.png"
 import "../assets/css/Home.css"
-import { Article } from './Article'
 import { Item } from '../components/Item'
 import { useNavigate } from 'react-router-dom'
 
