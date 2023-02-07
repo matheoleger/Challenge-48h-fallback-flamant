@@ -1,15 +1,12 @@
 import * as React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import "./App.css"
-import logo from './assets/svg/logo.svg';
-import { IconButton } from '@chakra-ui/react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Home } from './pages/Home'
 import { Register } from "./pages/Register";
 import { Login } from "./pages/Login";
 import { Article } from "./pages/Article";
 import { Cart } from "./pages/Cart";
-import { Item } from "./components/Item";
 
 function App() {
   return (
@@ -34,7 +31,7 @@ function App() {
         </header>
       
         <Routes>
-          <Route path='/' element={< Article />}></Route>
+          <Route path='/' element={< Home />}></Route>
           <Route path='/register' element={< Register />}></Route>
           <Route path='/login' element={< Login />}></Route>
           <Route path='/article/:id' element={< Article />}></Route>

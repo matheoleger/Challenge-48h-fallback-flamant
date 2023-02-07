@@ -2,7 +2,6 @@ import * as React from 'react'
 import image from "../assets/img/paysage.png"
 
 import "../assets/css/Home.css"
-import { Article } from './Article'
 import { Item } from '../components/Item'
 
 
