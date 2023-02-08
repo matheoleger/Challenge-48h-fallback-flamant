@@ -22,7 +22,7 @@ export const Login = () => {
                 <form action="Login">
                     <input onClick={() => setCount(count + 1)} type="textarea" placeholder='E-mail' required autoFocus/><br />
                     <input onClick={() => setCount(count + 1)} type="textarea" placeholder='Password' required/><br />
-                    <input onClick={() => navigateToHome()} type="submit" value='Login'/>
+                    <input onClick={() => navigateToHome()} type="submit" value='Login' required/>
                 </form>
                 <input onClick={() => navigateTo() } type="submit" value='New account'/>
                 
