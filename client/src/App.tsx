@@ -31,8 +31,8 @@ function App() {
               </div>
 
               <div className="compte">
-                <a id='login' href='/cart'><InfoOutlineIcon /></a>
-                <a id='cart' href='/login' ><PlusSquareIcon /></a>
+                <a id='login' href='/login'><InfoOutlineIcon /></a>
+                <a id='cart' href='/cart' ><PlusSquareIcon /></a>
               </div>
             </div>
           </body>
