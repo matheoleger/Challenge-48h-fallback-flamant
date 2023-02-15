@@ -18,7 +18,7 @@ function App() {
       <Router>
         
         <header>
-          <body>
+          {/* <body> */}
             <div className="topnav">
               <a className="active" href='/'>Home</a>
               
@@ -35,7 +35,7 @@ function App() {
                 <a id='cart' href='/cart' ><PlusSquareIcon /></a>
               </div>
             </div>
-          </body>
+          {/* </body> */}
         </header>
       
         <Routes>

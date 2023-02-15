@@ -22,7 +22,7 @@ body {
     height: 100%;
 }
 
-.item input[type=textareaRegister] {
+.item input[type=textareaRegister], input[type=password] {
     display: inline-block;
     box-sizing: border-box; 
     text-align: left;
